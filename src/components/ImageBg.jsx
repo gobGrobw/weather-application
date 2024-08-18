@@ -19,7 +19,7 @@ const ImgBg = ({ city }) => {
 				if (result.type === 'success') {
 					const response = result.response.results[0];
 					console.log(response.urls);
-					setImg(response.urls.regular);
+					setImg(response.urls.full);
 				}
 			});
 	}, [city]);
