@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	user-select: none;
+}
+
+body {
+	height: 100dvh;
+	background: rgb(14, 41, 133);
+	background: linear-gradient(
+		180deg,
+		rgb(4, 13, 41) 28%,
+		rgb(8, 38, 95) 64%,
+		rgb(9, 52, 128) 100%
+	);
+}
+
+#root {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-auto {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+}
+
